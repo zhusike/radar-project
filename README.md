@@ -21,3 +21,6 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## vue-loader依赖postcss插件，帮我们去抹平浏览器兼容性问题
+## Iconfont : http://iconfont.cn/plus
+## Ai制作图标，另存为svg格式。接着就可以制作字体图标
+## 制作字体图标 : https://icomoon.io/

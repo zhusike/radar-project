@@ -1,42 +1,39 @@
 <template>
   <div>
-    <v-guestPortrait></v-guestPortrait>
     <div class="tab">
       <div class="tab-item">
-        <router-link to="/shop-overview">店铺概览</router-link>
+        <router-link to="/shop-overview" active-class="active">店铺概览</router-link>
       </div>
       <div class="tab-item">
-        <router-link to='/guest-portrait'>客群画像</router-link>
+        <router-link to='/guest-portrait' active-class="active">客群画像</router-link>
       </div>
       <div class="tab-item">
-        <router-link to='/shops-ranking'>商铺排行</router-link>
+        <router-link to='/shops-ranking' active-class="active">商铺排行</router-link>
       </div>
     </div>
-    <router-view/>
+    <router-view ></router-view>
   </div>
 </template>
 
 <script type="text/ecmascript">
   // export default 和 export的区别
-  import shopOverview from './components/shop-overview/shop-overview.vue';
-  import guestPortrait from './components/guest-portrait/guest-portrait.vue';
-  import shopsRanking from './components/shops-ranking/shops-ranking.vue';
-  
+import {hotcss} from './assets/hotcss/hotcss';
+ 
 export default {
-  components: {
-    'v-shopOverview': shopOverview,
-    'v-guestPortrait': guestPortrait,
-    'v-shopsRanking': shopsRanking
-  }
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import './assets/hotcss/px2rem.scss';
+
 .tab {
+  position: absolute;
+  bottom: 0;
   display: flex;
   width: 100%;
-  height: 55px;
-  line-height: 55px;
+  height: 110px;
+  line-height: 110px;
+  
 }
 .tab-item {
   flex: 1;
@@ -45,10 +42,12 @@ export default {
 }
 .tab-item>a {
   /*& > a*/
-  display: block;
-  font-size: 14px;
+  display: block; /*优化,点击到旁边也可以*/
+  font-size: 24px;
   color: rgb(255, 255, 255);
 }
-.tab-item.active
-  color: rgb(240,20,20)
+.tab-item .active {
+  background: #146dbf;
+  color: rgb(254, 250, 117);
+}
 </style>
