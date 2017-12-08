@@ -17,7 +17,7 @@
 
 <script type="text/ecmascript">
   // export default 和 export的区别
-import {hotcss} from './assets/hotcss/hotcss';
+// import {hotcss} from './assets/hotcss/hotcss';
  
 export default {
 };
