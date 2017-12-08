@@ -13,4 +13,4 @@ new Vue({
   template: '<App/>',
   components: { App }
 });
-router.replace('/shop-overview');
+router.go('/shop-overview');
