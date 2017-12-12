@@ -19,31 +19,32 @@
   // export default 和 export的区别
 // import {hotcss} from './assets/hotcss/hotcss';
  
-export default {
-};
+  export default {
+  };
 </script>
 
 <style lang="scss" scoped>
-@import './assets/hotcss/px2rem.scss';
+  @import 'assets/hotcss/px2rem.scss';
 
 .tab {
-  position: absolute;
+  position: fixed;
+  left: 0;
   bottom: 0;
+  z-index: 500;
   display: flex;
   width: 100%;
-  height: 110px;
-  line-height: 110px;
-  
+  height: px2rem(110);
+  line-height: px2rem(110);
 }
 .tab-item {
   flex: 1;
   text-align: center;
-  background: linear-gradient(top, #70e0fd 0.00%, #1a80a5 90.00%);
+  background: linear-gradient(top, #70e0fd 0, #1a80a5 90.00%);
 }
 .tab-item>a {
   /*& > a*/
   display: block; /*优化,点击到旁边也可以*/
-  font-size: 24px;
+  font-size: px2rem(24);
   color: rgb(255, 255, 255);
 }
 .tab-item .active {

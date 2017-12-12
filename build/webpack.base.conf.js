@@ -37,7 +37,8 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'common': resolve('src/common'),
-      'components': resolve('src/components') // 在任一页面使用，避免再使用../跳出目录
+      'components': resolve('src/components'), // 在任一页面使用，避免再使用../跳出目录
+      'assets': resolve('src/assets')
     }
   },
   module: {

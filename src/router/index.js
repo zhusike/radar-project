@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import shopOverview from '../components/shop-overview/shop-overview.vue';
 import guestPortrait from '../components/guest-portrait/guest-portrait.vue';
 import shopsRanking from '../components/shops-ranking/shops-ranking.vue';
+import '../common/style.css';
 
 Vue.use(Router);
 

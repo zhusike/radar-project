@@ -41,3 +41,12 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```
 ### 使用mock.js
 ```
+> gulp构建工具(基于流的自动化构建工具)：
+
+#### 软件的构建：将源代码转化为可执行软件的过程。
+```
+       (compile)           (package)
+a.java    ->      a.class     ->     result.jar/result.war
+```
+gulp的设计者认为，大多数需要构建的过程，一般不只需要一个步骤，如果不使用流的话，这个过程会生成多个临时文件，才能达到最终的结果。
+如果使用流，就可以像管道一样，将一个步骤的处理结果直接输送给下一个步骤。一切数据都保存在内存之中，减少IO提高构建工具的性能。
