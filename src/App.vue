@@ -23,6 +23,7 @@
   };
 </script>
 
+<<<<<<< HEAD
 <style lang="scss" scoped>
   @import 'assets/hotcss/px2rem.scss';
 
@@ -51,4 +52,28 @@
   background: #146dbf;
   color: rgb(254, 250, 117);
 }
+=======
+<style lang="stylus" rel="stylesheet/stylus">
+/*@import './assets/hotcss/px2rem.scss';*/
+@import './assets/hotcss/px2rem.styl';
+
+.tab
+  position: absolute
+  bottom: 0
+  display: flex
+  width: 100%
+  height: 110px
+  line-height: 110px
+  .tab-item 
+    flex: 1
+    text-align: center
+    background: linear-gradient(top, #70e0fd 0.00%, #1a80a5 90.00%)
+    & > a
+      display: block /*优化,点击到旁边也可以*/
+      font-size: 24px
+      color: rgb(255, 255, 255)
+    & .active 
+      background: rgb(48, 182, 187)
+    
+>>>>>>> 5b5a5ce964bf34e4d4b00eb3993c588226f02838
 </style>

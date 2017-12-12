@@ -15,6 +15,10 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+	"stylus-loader": "^3.0.1",
+	"stylus": "0.54.5",
+	"echarts": "^3.8.5",  
+	"vue-echarts-v3": "^v1.0.15",
 	"sass-loader": "^6.0.6",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
